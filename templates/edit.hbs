@@ -1,0 +1,21 @@
+<!-- Edit  -->
+{{>header}}
+<section id="viewEditdestination">
+    <h2>Edit existing destination</h2>
+    <form id="formAdddestination" action="/edit-offer/{{productId}}" method="POST">
+        <label for="destination">Destination name:</label>
+        <input type="text" id="destination" name="destination" value="New Zealand">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" value="Auckland">
+        <label for="duration">Duration:</label>
+        <input type="number" id="duration" name="duration" value="15">
+        <label for="departureDate">Departure Date:</label>
+        <input type="date" id="departureDate" name="departureDate" value="2021-11-15">
+        <label for="imgUrl">Image:</label>
+        <input type="text" id="imgUrl" name="imgUrl"
+            value="https://image.freepik.com/free-photo/walking-hooker-valley-track-with-view-mount-cook-new-zealand_181624-17124.jpg">
+
+        <input type="submit" class="create" value="Edit">
+    </form>
+</section>
+{{>footer}}
